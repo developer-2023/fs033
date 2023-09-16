@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="test.php" method="post">
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    </form>
+    <p>
+        <label for="red">Red</label>
+        <input type="radio" name="color" id="red" value="RED">
+        <label for="green">Green</label>
+        <input type="radio" name="color" id="green" value="GREEN">
+        <label for="blue">Blue</label>
+        <input type="radio" name="color" id="blue" value="BLUE">
+    </p>
+    <p>
+        <label for="top">Top</label>
+        <input type="checkbox" name="part" id="top" value="top">
+        <label for="mid">Mid</label>
+        <input type="checkbox" name="part" id="mid" value="mid">
+        <label for="bottom">Bottom</label>
+        <input type="checkbox" name="part" id="bottom" value="bottom">
+    </p>
+    <p>
+        <select name="colors" id="colors">
+            <option value="red">Red</option>     
+            <option value="green">Green</option>     
+            <option value="blue">Blue</option>
+            <optgroup label="luxury type">
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+            </optgroup>     
+        </select>
+    </p>
+
+    <button type="submit">Submit</button>
+</body>
+</html>
